@@ -11617,7 +11617,7 @@ html {
   transform: translateX(-50%);
 }
 
-@media (min-width: 400px) {
+@media (min-width: 100px) {
   
   .profile .profile-img {
     height: 30vw;
@@ -11647,6 +11647,8 @@ html {
     height: 30vw;
 
   }
+}
+
 @media (min-width: 1200px) {
   .profile {
     height: 30vw;
@@ -11675,14 +11677,15 @@ html {
 }
 
 .color-box-py{
-  background-image: linear-gradient(to bottom right, #3572a1, #4883b2, #fcd94a,#fbe56a);
+  background-color: #3572a1;
 }
 
-.color-box-an{
-  background-color: #c3012f;
+.color-box-react{
+  background-color: #62dafb;
 }
 
 .color-box-node{
   background-color: #80bd41;
 }  
-}
+
+
