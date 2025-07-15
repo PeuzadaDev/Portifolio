@@ -11606,8 +11606,8 @@ html {
   display: flex;
   align-items: center;
   margin-top: 3vw;
-  max-height: 30rem;
-  max-width: 30rem;
+  max-height: 34.5rem;
+  max-width: 34.5rem;
 }
 .profile .profile-img {
   height: 30vw;
@@ -11627,7 +11627,45 @@ html {
     height: 30vw;
     width: 30vw;
   }
+
 }
+
+@media (max-width: 800px){
+    .farm{
+    flex-direction: column;
+
+  }
+
+  .img-fluid{
+    padding-right:  0 !important;
+    padding-top: 0 !important;
+  }
+
+  .text-card{
+    padding-bottom: 1rem !important;
+  }
+
+  .botton-card{
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+@media (max-width: 767px){
+  .h2-yt {
+  font-size: 1.5rem;      /* Padrão em telas pequenas */
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.divonico{
+  padding: 1rem !important;
+}
+}
+
+
 @media (min-width: 990px) {
   .profile {
     height: 30vw;
@@ -11637,7 +11675,23 @@ html {
     height: 30vw;
 
   }
+  
 }
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;   /* 16 : 9  (ou altere para 75% se preferir 4 : 3) */
+  overflow: hidden;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  inset: 0;              /* top:0 left:0 bottom:0 right:0 */
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 @media (min-width: 991px) {
   .profile {
     height: 30vw;
